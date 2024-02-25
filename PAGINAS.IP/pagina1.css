@@ -106,7 +106,7 @@ main{
 }
 .categories-contenedor{
     text-align: center;
-    background-color: aquamarine;
+    /*background-color: aquamarine;*/
 }
 .grupo-categorias{
     display: flex;
@@ -114,7 +114,7 @@ main{
     align-items: center;
     width: 100%;
     margin-right: 150px;/*espaciado entre componentes*/
-    background-color: #2e234d;
+    /*background-color: #2e234d;*/
     margin-top: 25px;
 }
 .categoria_1 {
@@ -144,4 +144,32 @@ main{
     height: 100%;
     display: flex;
     align-items: center;
+}
+/*trabajamos con -------------------------- */
+.h2_trabajamos{
+    color: var(--main-dos);
+    font-size: 40px;
+    justify-content: center;
+}
+.trabajamos_con{
+    display: flex;
+    justify-content: center;
+    align-items: center;/*centra verticalmente*/
+    padding: 3rem 0;
+    /*background-color: violet;*/
+}
+.contenedor_trabajamos{
+    /*background-color: wheat;*/
+    width: 100%;
+    text-align: center;
+}
+.contenedor-marcas{
+    background-color: var(--main-dos);
+    display: flex;
+    justify-content:center;/*centra horizontalmente*/
+    align-items: center;/*centra verticalmente*/
+    height: 100%;/*ocupa el 100% del alto del contenedor*/
+    margin-top: 2rem;/*espaciado entre componentes*/
+    height: 238px;
+    width: 100%;
 }
