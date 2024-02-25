@@ -1,0 +1,63 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'KoPub Batang';
+    list-style: none;/*quita los puntos de las listas*/
+    text-decoration: none;/*quita el subrayado de los links*/
+    scroll-behavior: smooth;/*hace que el scroll sea suave*/
+    scroll-padding-top: 3rem;
+}
+
+/*Colores definidos*/
+:root{
+    --main-superior: #202020;
+    --main-dos: #2e234d;
+
+    /*tamano de fuentes*/
+    --big-font: 4.5rem;
+    --h2-font: 2.5rem;
+    --p-font: 1.1rem;
+}
+body{
+    color:white;
+}
+.header{
+    background-color: var(--main-superior);
+    padding:1rem 0;
+    display:flex;
+    justify-content: space-between;
+}
+
+.menu{
+    background-color: var(--main-dos);
+    padding:0.6rem 0;
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+a{
+    color: white;
+}
+.busqueda{
+    display: flex;
+    justify-content:end;
+    padding: 0.5rem 1rem;
+    width:100%;
+}
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+.search-bar{
+    border-radius: 20px;
+    width: 610px;
+    height: 40px;
+}
+
+
