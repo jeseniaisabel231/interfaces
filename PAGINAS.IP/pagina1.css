@@ -23,22 +23,35 @@
 body{
     color:white;
 }
+/*ESTILOS MENU----------------------------------------------*/
 .header{
     background-color: var(--main-superior);
     padding:1rem 0;
     display:flex;
     justify-content: space-between;
 }
+.img-1{
+    width: 100%;
+}
+
 
 .menu{
     background-color: var(--main-dos);
     padding:0.6rem 0;
+    font-size: 18px;
 }
-ul{
+a:hover {
+    color: #209fd5;
+
+}
+.menu ul{
     display: flex;
-    justify-content: space-evenly;
+    justify-content:center;
     align-items: center;
     height: 100%;
+}
+.menu ul li{
+    margin: 0 4rem;
 }
 a{
     color: white;
@@ -48,16 +61,87 @@ a{
     justify-content:end;
     padding: 0.5rem 1rem;
     width:100%;
+    font-size: 18px;
+    align-items: center;
 }
+.icon{
+    height: 22px;
+    position: absolute;
+    margin-right: 1rem;
+}
+.icon_uc{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.5rem;
+}
+
 .contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: end;
     max-width: 1200px;
-    margin: 0 auto;
     padding: 0 1rem;
 }
 .search-bar{
-    border-radius: 20px;
+    border-radius: 14px;
     width: 610px;
     height: 40px;
+    font-size: 18px;
+    padding-left: 1rem;
 }
-
-
+/*HOME - CATEGORIAS ----------------- */
+main{
+    color: black;
+}
+.h2_categorias{
+    color: var(--main-dos);
+    font-size: 40px;
+}
+.categories{
+    display: flex;
+    justify-content: center;
+    align-items: center;/*centra verticalmente*/
+    padding: 3rem 0;
+}
+.categories-contenedor{
+    text-align: center;
+    background-color: aquamarine;
+}
+.grupo-categorias{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-right: 150px;/*espaciado entre componentes*/
+    background-color: #2e234d;
+    margin-top: 25px;
+}
+.categoria_1 {
+    background-image: linear-gradient(180deg, #150E3C, #D9D9D9);
+    border-radius: 20px 20px 22px 22px;
+    width: 268px;
+    height: 438px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenedor-h3{
+    background-color: var(--main-superior);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 20px 20px;
+    
+}
+.h3_categorias{
+    color: white;
+    font-size: 27px;
+}
+.img_categorias{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
