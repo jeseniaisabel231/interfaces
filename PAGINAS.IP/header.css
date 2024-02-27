@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'KoPub Batang';
+    list-style: none;/*quita los puntos de las listas*/
+    text-decoration: none;/*quita el subrayado de los links*/
+    scroll-behavior: smooth;/*hace que el scroll sea suave*/
+    scroll-padding-top: 3rem;
+}
+
+/*Colores definidos*/
+:root{
+    --main-superior: #202020;
+    --main-dos: #2e234d;
+    --gris:#000;
+
+    /*tamano de fuentes*/
+    --big-font: 4.5rem;
+    --h2-font: 2.5rem;
+    --p-font: 1.1rem;
+}
+body{
+    color:white;
+}
+/*ESTILOS MENU----------------------------------------------*/
+.header{
+    background-color: var(--main-superior);
+    padding:1rem 0;
+    display:flex;
+    justify-content: space-between;
+}
+.img-1{
+    width: 100%;
+}
+
+
+.menu{
+    background-color: var(--main-dos);
+    padding:0.6rem 0;
+    font-size: 18px;
+}
+a:hover {
+    color: #209fd5;
+
+}
+.menu ul{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100%;
+}
+.menu ul li{
+    margin: 0 4rem;
+}
+.navlist span{
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+a{
+    color: white;
+}
+.busqueda{
+    display: flex;
+    justify-content:end;
+    padding: 0.5rem 1rem;
+    width:100%;
+    font-size: 18px;
+    align-items: center;
+}
+.icon{
+    height: 22px;
+    position: absolute;
+    margin-right: 1rem;
+}
+.icon_uc{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.5rem;
+}
+
+.contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    max-width: 1200px;
+    padding: 0 1rem;
+}
+.search-bar{
+    border-radius: 14px;
+    width: 610px;
+    height: 40px;
+    font-size: 18px;
+    padding-left: 1rem;
+}

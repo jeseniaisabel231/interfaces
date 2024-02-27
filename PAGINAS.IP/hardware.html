@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="../PAGINAS.IP/pagina1.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="hardware.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
 </head>
-
 <body>
+    <!--HEADER------------------------------------------------------------------------------------------------------------- -->
+    <?php
+    include '../HEADER/header.php';?>
+
     <header>
         <div class="header">
             <img class="logo" alt="Logo" src="../img/logo_t.png">
-
             <div class="busqueda">
                 <div class="contenedor">
                     <input class="search-bar" type="text" placeholder="Buscar Productos...">
@@ -24,7 +30,6 @@
                         </svg>
                     </a>
                 </div>
-
                 <a href="#" class="icon_uc" > <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="Group 1">
                     <path id="Vector" d="M15.2098 0.00139365C6.77416 -0.112538 -0.112543 6.77383 0.00139372 15.2091C0.113889 23.299 6.70133 29.8861 14.7916 29.9986C23.2287 30.1139 30.1139 23.2276 29.9986 14.7923C29.8875 6.701 23.3001 0.113883 15.2098 0.00139365ZM24.3262 23.5989C24.2975 23.63 24.2623 23.6544 24.2231 23.6703C24.1839 23.6862 24.1417 23.6933 24.0994 23.6911C24.0572 23.6889 24.0159 23.6775 23.9786 23.6576C23.9413 23.6376 23.9088 23.6097 23.8835 23.5759C23.2385 22.732 22.4486 22.0095 21.5506 21.4422C19.7147 20.2639 17.3883 19.6149 15.0007 19.6149C12.6131 19.6149 10.2867 20.2639 8.45076 21.4422C7.55288 22.0093 6.76298 22.7315 6.11794 23.5751C6.0926 23.609 6.06011 23.6369 6.02279 23.6568C5.98547 23.6768 5.94421 23.6882 5.90196 23.6904C5.85971 23.6926 5.81749 23.6855 5.7783 23.6696C5.7391 23.6536 5.7039 23.6293 5.67517 23.5982C3.55917 21.3141 2.36054 18.3295 2.30898 15.2163C2.19144 8.19942 7.94959 2.32617 14.9697 2.30887C21.9898 2.29156 27.6924 7.99175 27.6924 15C27.6948 18.1882 26.4925 21.2596 24.3262 23.5989Z" fill="white"/>
@@ -32,7 +37,6 @@
                     </g>
                     </svg><span >Mi cuenta</span>
                 </a>
-
                 <a href="#" class="icon_uc"><svg width="33" height="34" viewBox="0 0 33 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="Group 2">
                     <path id="Vector" d="M10.911 33.9119C12.2501 33.9119 13.3357 32.6807 13.3357 31.1619C13.3357 29.6431 12.2501 28.4119 10.911 28.4119C9.5719 28.4119 8.48633 29.6431 8.48633 31.1619C8.48633 32.6807 9.5719 33.9119 10.911 33.9119Z" fill="white"/>
@@ -42,7 +46,6 @@
                     </svg>
                 </a>
             </div>
-        
         </div>
         <div class="menu">
             <ul class="navlist">
@@ -56,7 +59,7 @@
                     <path id="Vector" d="M16.1538 1.54511H4.84615C4.63194 1.54511 4.4265 1.46372 4.27503 1.31884C4.12356 1.17395 4.03846 0.977452 4.03846 0.772557C4.03846 0.567662 4.12356 0.371159 4.27503 0.226277C4.4265 0.0813943 4.63194 0 4.84615 0H16.1538C16.3681 0 16.5735 0.0813943 16.725 0.226277C16.8764 0.371159 16.9615 0.567662 16.9615 0.772557C16.9615 0.977452 16.8764 1.17395 16.725 1.31884C16.5735 1.46372 16.3681 1.54511 16.1538 1.54511ZM17.7692 3.86279H3.23077C3.01656 3.86279 2.81112 3.78139 2.65964 3.63651C2.50817 3.49163 2.42308 3.29512 2.42308 3.09023C2.42308 2.88533 2.50817 2.68883 2.65964 2.54395C2.81112 2.39907 3.01656 2.31767 3.23077 2.31767H17.7692C17.9834 2.31767 18.1889 2.39907 18.3404 2.54395C18.4918 2.68883 18.5769 2.88533 18.5769 3.09023C18.5769 3.29512 18.4918 3.49163 18.3404 3.63651C18.1889 3.78139 17.9834 3.86279 17.7692 3.86279ZM18.7349 18.5414H2.26507C1.66454 18.5407 1.0888 18.3123 0.664162 17.9061C0.239523 17.4999 0.000668072 16.9492 0 16.3748V6.80188C0.000668072 6.22748 0.239523 5.67678 0.664162 5.27061C1.0888 4.86445 1.66454 4.63598 2.26507 4.63534H18.7349C19.3355 4.63598 19.9112 4.86445 20.3358 5.27061C20.7605 5.67678 20.9993 6.22748 21 6.80188V16.3748C20.9993 16.9492 20.7605 17.4999 20.3358 17.9061C19.9112 18.3123 19.3355 18.5407 18.7349 18.5414Z" fill="#E6E6E6"/>
                     </svg><span>Categorias</span><svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
                         <path d="M1 1L6 6.29754L11 1" stroke="#E6E6E6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg></a></li>
+                        </svg></a></li>
                 <li><a href="#"><svg width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path id="Vector" d="M16.827 20.9998C15.9118 20.9998 14.6262 20.6689 12.7011 19.5936C10.3602 18.281 8.54949 17.0693 6.2212 14.7476C3.97637 12.5046 2.88396 11.0524 1.35505 8.27076C-0.372179 5.1301 -0.0777441 3.48383 0.251386 2.78022C0.643341 1.93928 1.2219 1.4363 1.96971 0.937076C2.39446 0.65884 2.84395 0.420328 3.31248 0.224568C3.35936 0.204411 3.40297 0.185192 3.44188 0.167848C3.67396 0.0633158 4.02559 -0.0946548 4.471 0.0740972C4.76825 0.185661 5.03361 0.413945 5.44901 0.824106C6.3009 1.66412 7.46505 3.53492 7.89451 4.45368C8.18285 5.07291 8.37367 5.48166 8.37414 5.94011C8.37414 6.47683 8.10408 6.89074 7.77636 7.33747C7.71494 7.42137 7.65399 7.50153 7.59492 7.57934C7.23813 8.0481 7.15983 8.18357 7.2114 8.42545C7.31595 8.91155 8.09564 10.3586 9.377 11.6369C10.6584 12.9152 12.064 13.6455 12.552 13.7496C12.8043 13.8035 12.9426 13.7219 13.4264 13.3525C13.4958 13.2996 13.5671 13.2447 13.6416 13.1899C14.1414 12.8182 14.5362 12.5552 15.0604 12.5552H15.0632C15.5194 12.5552 15.9099 12.753 16.5569 13.0793C17.4008 13.5049 19.3283 14.6538 20.1736 15.5065C20.5848 15.9209 20.814 16.1852 20.9261 16.482C21.0949 16.9287 20.9359 17.2788 20.8323 17.5132C20.815 17.5521 20.7957 17.5948 20.7756 17.6421C20.5782 18.1097 20.3383 18.5582 20.0587 18.9818C19.5603 19.7271 19.0554 20.3042 18.2124 20.6965C17.7795 20.9012 17.3058 21.0049 16.827 20.9998Z" fill="#E6E6E6"/>
                     </svg>
@@ -64,7 +67,179 @@
                 </li>
             </ul>
         </div>
-        
     </header>
+
+
+
+
+
+
+    <div>
+        <img class="img-1" src="../img/fondo2.png" alt="Tarjeta Grafica">
+    </div>
+    <main>
+        <section class="categoria_h">
+            <h2 class="letra_filtrar">Filtrar por subcategorias</h2>
+            <h1 class="txt_h">Hadware</h1>
+            <div class="hardware_tipos_h">
+                <ul>
+                    <li><input type="checkbox">Procesadores</li>
+                    <li><input type="checkbox">Mainboards</li>
+                    <li><input type="checkbox">Memorias RAM</li>
+                    <li><input type="checkbox">Almacenamiento</li>
+                    <li><input type="checkbox">Tarjeta de video</li>
+                    <li><input type="checkbox">Fuentes de poder</li>
+                </ul>
+            </div>
+            <hr class="hr_h">
+            <div class="filtrar_precio_h">
+                <h2 class="letra_filtrar_2">Filtrar por precio </h2>
+                <div class="btn_f">
+                    <p>Precio: $0 - $2820</p>
+                    <button class="btn_filtrar">Filtrar</button>
+                </div>
+            </div>
+        </section>
+<!--PRODUCTOS------------------------------------------------------------------------------------------------------------- -->
+        <section class="productos_nuevos_h">
+            <div class="contenedor_principal_h">
+                <div class="contenedor_productos_h">
+                    <div class="producto_1_h">
+                        <a class="img_producto_h">
+                            <img src="../img/producto_1.png" alt="">
+                        </a><hr>
+                        <div class="descripcion_producto_h">
+                            <p class="codigo_h">SKU:PC42788</p><br>
+                            <p class="nombre_h">PC GAMER</p><br>
+                            <p class="precio_h">$ 904.32</p>
+
+                            <input class="cantidad_h" type="number">
+                            
+                            <button class="compras_h" href=""><svg width="25" height="22" viewBox="0 0 25 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="Group 39">
+                                <path id="Vector" d="M7.94084 21.7019C8.91542 21.7019 9.70548 20.8922 9.70548 19.8934C9.70548 18.8946 8.91542 18.0849 7.94084 18.0849C6.96626 18.0849 6.17621 18.8946 6.17621 19.8934C6.17621 20.8922 6.96626 21.7019 7.94084 21.7019Z" fill="white"/>
+                                <path id="Vector_2" d="M20.2932 21.7019C21.2678 21.7019 22.0578 20.8922 22.0578 19.8934C22.0578 18.8946 21.2678 18.0849 20.2932 18.0849C19.3186 18.0849 18.5286 18.8946 18.5286 19.8934C18.5286 20.8922 19.3186 21.7019 20.2932 21.7019Z" fill="white"/>
+                                <path id="Vector_3" d="M7.48756 13.5637H21.8991L24.0167 2.71273H5.6187L5.15163 0H0V1.80849H3.67154L6.31849 17.1806H22.0579V15.3722H7.79858L7.48756 13.5637Z" fill="white"/>
+                                </g>
+                                </svg><span>Anadir al carrito</span>
+                            </button>
+                        </div>
+                        
+                    </div>
+    
+                    <div class="producto_1_h separacion">
+                        <div class="img_producto_h">
+                            <img src="../img/producto_2.png" alt="">
+                        </div><hr>
+                        <div class="descripcion_producto_h">
+                            <p class="codigo_h">SKU:PC42788</p><br>
+                            <p class="nombre_h">PCGAMER</p><br>
+                            <p class="precio_h">$ 904.32</p>
+
+                            <input class="cantidad_h" type="number">
+                            
+                            <button class="compras_h"href=""><svg width="25" height="22" viewBox="0 0 25 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="Group 39">
+                                <path id="Vector" d="M7.94084 21.7019C8.91542 21.7019 9.70548 20.8922 9.70548 19.8934C9.70548 18.8946 8.91542 18.0849 7.94084 18.0849C6.96626 18.0849 6.17621 18.8946 6.17621 19.8934C6.17621 20.8922 6.96626 21.7019 7.94084 21.7019Z" fill="white"/>
+                                <path id="Vector_2" d="M20.2932 21.7019C21.2678 21.7019 22.0578 20.8922 22.0578 19.8934C22.0578 18.8946 21.2678 18.0849 20.2932 18.0849C19.3186 18.0849 18.5286 18.8946 18.5286 19.8934C18.5286 20.8922 19.3186 21.7019 20.2932 21.7019Z" fill="white"/>
+                                <path id="Vector_3" d="M7.48756 13.5637H21.8991L24.0167 2.71273H5.6187L5.15163 0H0V1.80849H3.67154L6.31849 17.1806H22.0579V15.3722H7.79858L7.48756 13.5637Z" fill="white"/>
+                                </g>
+                                </svg><span>Anadir al carrito</span>
+                            </button>
+                        </div>
+                        
+                    </div>
+    
+                    <div class="producto_1_h">
+                        <div class="img_producto_h">
+                            <img src="../img/producto_2.png" alt="">
+                        </div><hr>
+                        <div class="descripcion_producto_h">
+                            <p class="codigo_h">SKU:PC42788</p><br>
+                            <p class="nombre_h">PCGAMER</p><br>
+                            <p class="precio_h">$ 904.32</p>
+
+                            <input class="cantidad_h" type="number">
+                            
+                            <button class="compras_h"href=""><svg width="25" height="22" viewBox="0 0 25 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="Group 39">
+                                <path id="Vector" d="M7.94084 21.7019C8.91542 21.7019 9.70548 20.8922 9.70548 19.8934C9.70548 18.8946 8.91542 18.0849 7.94084 18.0849C6.96626 18.0849 6.17621 18.8946 6.17621 19.8934C6.17621 20.8922 6.96626 21.7019 7.94084 21.7019Z" fill="white"/>
+                                <path id="Vector_2" d="M20.2932 21.7019C21.2678 21.7019 22.0578 20.8922 22.0578 19.8934C22.0578 18.8946 21.2678 18.0849 20.2932 18.0849C19.3186 18.0849 18.5286 18.8946 18.5286 19.8934C18.5286 20.8922 19.3186 21.7019 20.2932 21.7019Z" fill="white"/>
+                                <path id="Vector_3" d="M7.48756 13.5637H21.8991L24.0167 2.71273H5.6187L5.15163 0H0V1.80849H3.67154L6.31849 17.1806H22.0579V15.3722H7.79858L7.48756 13.5637Z" fill="white"/>
+                                </g>
+                                </svg><span>Anadir al carrito</span>
+                            </button>
+                        </div>
+                        
+                    </div>
+    
+                    <div class="producto_1_h">
+                        <div class="img_producto_h">
+                            <img src="../img/producto_2.png" alt="">
+                        </div><hr>
+                        <div class="descripcion_producto_h">
+                            <p class="codigo_h">SKU:PC42788</p><br>
+                            <p class="nombre_h">PCGAMER</p><br>
+                            <p class="precio_h">$ 904.32</p>
+
+                            <input class="cantidad_h" type="number">
+                            
+                            <button class="compras_h"href=""><svg width="25" height="22" viewBox="0 0 25 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="Group 39">
+                                <path id="Vector" d="M7.94084 21.7019C8.91542 21.7019 9.70548 20.8922 9.70548 19.8934C9.70548 18.8946 8.91542 18.0849 7.94084 18.0849C6.96626 18.0849 6.17621 18.8946 6.17621 19.8934C6.17621 20.8922 6.96626 21.7019 7.94084 21.7019Z" fill="white"/>
+                                <path id="Vector_2" d="M20.2932 21.7019C21.2678 21.7019 22.0578 20.8922 22.0578 19.8934C22.0578 18.8946 21.2678 18.0849 20.2932 18.0849C19.3186 18.0849 18.5286 18.8946 18.5286 19.8934C18.5286 20.8922 19.3186 21.7019 20.2932 21.7019Z" fill="white"/>
+                                <path id="Vector_3" d="M7.48756 13.5637H21.8991L24.0167 2.71273H5.6187L5.15163 0H0V1.80849H3.67154L6.31849 17.1806H22.0579V15.3722H7.79858L7.48756 13.5637Z" fill="white"/>
+                                </g>
+                                </svg><span>Anadir al carrito</span>
+                            </button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--FOOTER------------------------------------------------------------------------------------------------------------- -->
+    <?php
+    include '../FOOTER/footer.php';?>
+    <footer>
+        <div class="informacion">
+            <div>
+                <h5 class="pregunta">¿Deseas recibir más información?</h5>
+                <p class="parrafo">Asegúrese de que nunca se pierda nuestras noticias interesantes al unirse <br> a nuestro programa de boletines.</p>
+            </div>
+            <button class="suscribete">Suscribete</button>
+        </div>
+        <div class="ubicacion_todo"> <!--footer-->
+            <div class="contactos">
+                <div class="redes_sociales">
+                    <button class="btn"><img class="icon_red" src="../img/facebook.png" alt="Facebook"></button>
+                    <button class="btn"><img class="icon_red" src="../img/instagram.png" alt="Instagram"></button>
+                    <button class="btn"><img class="icon_red" src="../img/twitter.png" alt="Twitter"></button>
+                </div>
+                <h4 class="datos">Servicio a domicilio</h4>
+                <a href="tel:1234567890">123 456 7890</a>
+                <h4 class="datos">Servicio al cliente</h4>
+                <a href="tel:1234567890">123 456 7890</a>
+                <h4 class="datos">Correo Electrónico</h4>
+                <a href="mailto:john.mata@epn.edu.ec">john.mata@epn.edu.ec</a>
+            </div>
+            <div class="descargas">
+                <h4 class="tit_cont">Contactanos</h4>
+                <hr>
+                <a class="pt-2 pb-5" href="https://www.google.com/maps/?q=latitude,longitude">Av. de la Prensa N58-411</a>
+                <h4 class="text_at">App Tecny</h4>
+                <hr>
+                <span class="pt-2">Encuentrala en:</span>
+                <button class="btn_as"><img class="google" src="../img/appStore.png" alt="Download in AppStore"></button>
+                <button class="btn_gp"><img class="google" src="../img/googlePlay.png" alt="Download in GooglePlay"></button>
+            </div>
+            <div class="map_derechos">
+                <iframe class="w-[450px] h-[300px] rounded-[10px]" src="https://www.google.com/maps/embed?pb=..." allowfullscreen="" loading="lazy"></iframe>
+                <p class="pt-3">Todos los derechos reservados &copy; 2024 Tecny</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
