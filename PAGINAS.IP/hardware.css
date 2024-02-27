@@ -1,0 +1,67 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'KoPub Batang';
+    list-style: none;/*quita los puntos de las listas*/
+    text-decoration: none;/*quita el subrayado de los links*/
+    scroll-behavior: smooth;/*hace que el scroll sea suave*/
+    scroll-padding-top: 3rem;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 40px 0;
+}
+.categoria_h{
+    display:flex;
+    flex-direction: column;
+    margin-left:30px;
+    border: 2px solid #dadada;
+    border-radius: 15px;
+    width: 275px;
+    height: 400px;
+}
+.letra_filtrar{
+    font-size: 20px;
+    font-family: 'Volkhov';
+    padding-top: 15px ;
+    padding-left: 20px;
+}
+h1{
+    font-size: 17px;
+    font-family: 'Volkhov';
+    margin-top: 8px;
+    padding-left: 20px;
+}
+.hardware_tipos_h ul li{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.hr_h{
+    
+    margin-top: 20px;
+    width: 100%;
+}
+.hardware_tipos_h{
+    padding-left: 20px;
+
+}
+.filtrar_precio_h{
+    margin-left: 20px;
+}
+h2{
+    font-family: 'Volkhov';
+    font-size: 20px;
+}
+/*PRODUCTOS NUEVOS---------*/
+.productos_nuevos_h{
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+
+
