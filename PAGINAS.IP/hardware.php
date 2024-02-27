@@ -4,12 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="hardware.css">
+    <link rel="stylesheet" href="./hardware.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
 </head>
 
 <body>
@@ -35,14 +31,14 @@
             </div>
             <hr class="hr_h">
             <div class="filtrar_precio_h">
-                <h2>Filtrar por precio</h2>
+                <h2>Filtrar por precio </h2>
                 <p>Precio: $0 - $2820</p>
                 <button>Filtrar</button>
             </div>
         </section>
 <!--PRODUCTOS------------------------------------------------------------------------------------------------------------- -->
         <section class="productos_nuevos_h">
-            <div class="contenedor-principal_h">
+            <div class="contenedor_principal_h">
                 <div class="contenedor-productos_h">
                     <div class="producto_1_h">
                         <div class="img_producto_h">
