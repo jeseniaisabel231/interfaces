@@ -195,6 +195,7 @@ hr{
     width: 48px;
     height: 35px;
     border-radius: 12px;
+    padding-left: 10px;
 }
 .compras{
     display:flex;
@@ -207,4 +208,6 @@ hr{
     align-items: center;
     justify-content: space-evenly;
 }
+
+
 /*FOOTER--------------------------*/
