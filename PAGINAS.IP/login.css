@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'KoPub Batang';
+    list-style: none;/*quita los puntos de las listas*/
+    text-decoration: none;/*quita el subrayado de los links*/
+    scroll-behavior: smooth;/*hace que el scroll sea suave*/
+    scroll-padding-top: 3rem;
+}
+
+/*Colores definidos*/
+:root{
+    --main-superior: #202020;
+    --main-dos: #2e234d;
+    --gris:#000;
+
+    /*tamano de fuentes*/
+    --big-font: 4.5rem;
+    --h2-font: 2.5rem;
+    --p-font: 1.1rem;
+}
+body{
+    color:white;
+}
+.contenedor_principal{
+    display:flex;
+    /*background-color: yellow;*/
+    color: black;
+    height: 100vh;
+}
+img{
+    width: 50%;
+    height: 100%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    /*background-color: rosybrown;*/
+    padding: 0 10rem;
+}
+p{
+    text-align: center;
+}
+h1{
+    text-align: center;
+    margin-bottom: 23px;
+    font-size: 30px;
+}
+button{
+    margin-top: 50px;
+}
+.fonrm{
+    border-radius: 8px;
+    height: 40px;
+    border: 2px solid #dadada;
+}
+button{
+    background-color: var(--main-superior);
+    height:40px;
+    color: white;
+    border-radius: 8px;
+    font-size: 15px;
+
+}
+p{
+    margin-top: 17px;
+}
+label{
+    margin-top: 14px;
+    margin-bottom: 7px;
+    font-size: 15px;
+}
+
