@@ -1,0 +1,121 @@
+#volver{
+    display: flex;
+    justify-content: flex-end
+}
+  
+#filtro .button_skyblue{
+    background-color:#209FD5;
+    color: #ffffff;
+    width: 90px;
+    padding: 5px 2px;
+    border: none;
+    border-radius: 2ch;
+}
+.button_skyblue{
+    background-color: #ffffff;
+    border:solid 1px #209FD5;
+    color: #209FD5;
+    margin: 2% 5%;
+    padding: .6%;
+}
+  
+h1{
+    font-size: 3em;
+    text-align: center;
+    margin: 15px 0;
+    width: 100%;
+}
+  /* Lupa */
+#lupa {
+    display: flex;
+}
+#lupa_icon{
+    border: solid .5px;
+    border-radius:0 20ch 20ch 0;
+    padding: 2px 20px;
+    background: #ffffff;
+}
+input[type="text" i] {
+    border-radius: 2ch 0 0 2ch;
+    border: solid .5px;
+}
+  
+.table_container{
+    width: 80%;
+    margin: auto;
+}
+.filtro_container{
+    display: flex;
+    padding: 6px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+#filtro{
+    display: flex;
+    align-items: center;
+}
+#filtro h5{
+    margin-right: 6px;
+}
+
+
+.cliente {
+    background-color: #fff;
+    border-radius: 5px;
+
+}
+.label{
+    background-color: #209FD5;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    cursor: pointer;
+    margin-top: 5%;
+}
+.cliente .label::after{
+    content: '+';
+    display: flex;
+    align-items: center;
+    padding-right: 3%;
+    font-size: 2em;
+}
+.cliente.active .label::after{
+    content: '-';
+    display: flex;
+    align-items: center;
+    padding-right: 3%;
+    font-size: 2em;
+}
+
+.shipment-container{
+    display: flex;
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: 0s;
+    overflow-y: auto;
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    
+}
+
+.shipment-content{
+    width: 50%;
+}
+.shipment-row{
+    display: flex;
+    margin: 2%;
+    justify-content: space-between;
+}
+.shipment-label{
+    font-weight: bold;
+}
+
+
+.cliente.active .shipment-container {
+    height: 100%;
+}
+span{
+    color: green;
+}

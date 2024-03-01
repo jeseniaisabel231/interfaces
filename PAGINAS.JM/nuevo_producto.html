@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/nuevo_producto.css" />
+    <title>Añadir producto</title>
+    <script
+      src="https://kit.fontawesome.com/6db7c29e14.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="volver">
+      <button class="button_skyblue">
+        <i class="fa-solid fa-arrow-left"></i> Volver a módulos
+      </button>
+    </div>
+    <h1>Añadir nuevo producto</h1>
+
+    <form id="producto">
+        <div class="columna">
+            <label for="id_producto">ID producto:</label>
+            <input type="text" id="id_producto" required />
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required />
+
+            <label for="descripcion">Descripción:</label>
+            <textarea id="descripcion"></textarea>
+
+            <label for="stock">Stock:</label>
+            <input type="number" min="0" id="stock" required />
+
+            <label for="precio">Precio:</label>
+            <input type="number" step=".01" id="precio" required />
+
+            <label for="marca">Marca: </label>
+            <input type="text" id="marca" list="marcas" />
+        </div>
+
+        <div class="columna">
+            <label for="imagen">Imagen:</label>
+            <input type="file" id="image-upload" accept="image/*" />
+
+            <label for="promocion">Promoción:</label>
+            <select id="promocion">
+            <option value="" selected disabled hidden>
+                Selecciona una opción...
+            </option>
+            </select>
+            <label for="modelo">Modelo:</label>
+            <input type="text" id="modelo" />
+            <button class="btn_send" type="submit">Enviar</button>
+        </div>
+    </form>
+  </body>
+</html>

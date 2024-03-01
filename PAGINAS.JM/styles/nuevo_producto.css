@@ -1,0 +1,62 @@
+#volver{
+    display: flex;
+    justify-content: flex-end
+}
+.button_skyblue{
+    background-color: #ffffff;
+    border:solid 1px #209FD5;
+    color: #209FD5;
+    margin: 2% 5%;
+    padding: .6%;
+}
+h1{
+    font-size: 3em;
+    text-align: center;
+    margin: 15px 0;
+    width: 100%;
+}
+
+#producto{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    border: solid 4px #209FD5;
+    border-radius: 2ch;
+}
+
+form {
+    width: 500px;
+    margin: 0 auto;
+    padding: 2%;
+}
+
+.columna {
+float: left;
+width: 50%;
+margin-right: 5%;
+}
+
+label, input {
+display: block; 
+width: 100%;
+margin-bottom: 10px;
+padding: 8px 0;
+}
+input[type="text"i], [type="number"i], textarea{
+    border: solid 1px #209FD5;
+}
+textarea{
+    width: 100%;
+}
+
+.btn_send{
+    font-size: 16px;
+    background-color: #222460;
+    color: #ffffff;
+    width: 150px;
+    margin-top: 20px;
+    height: 4vh;
+
+}
+  
+  

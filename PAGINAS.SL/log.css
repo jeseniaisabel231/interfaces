@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    }
+
+  .contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .titulo {
+    color: #642a73;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  nav {
+    text-align: right;
+    padding: 30px 50px 0 0;
+  }
+
+  nav > a {
+    color: #fff8d2; 
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+
+  nav > a:hover {
+    text-decoration: underline;
+  }
+
+  header .textos-header {
+    display: flex;
+    height: 200px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .textos-header h1 {
+    font-size: 50px;
+    color: #ffc6d1; 
+  }
+
+  form {
+    max-width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left;
+    background-color: #d2d8e7; 
+  }
+
+  label {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+
+  perfil-select {
+    width: 100px;
+    padding: 10px;
+  }
+
+  button{
+    background-color: skyblue;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  /*-------------HEADER---------*/
+.icon_uc{
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #2e234d;
+  margin-left: 1em;
+}
+
+.busqueda{
+  display:flex;
+  justify-content: center;
+  background-color: #2e234d;
+  flex: 1;
+  align-items: center;
+}
+
+.busqueda li{
+  margin: 0 30px;
+}
+.menu {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+}
+.navlist {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.navlist li {
+  margin: 0 50px;
+}
+/*-------------FIN-------------*/
+
+  @media screen and (max-width: 500px) {
+    nav {
+      text-align: center;
+      padding: 30px 0 0 0;
+    }
+
+    nav > a {
+      margin-right: 5px;
+    }
+
+    .textos-header h1 {
+      font-size: 35px;
+    }
+  }

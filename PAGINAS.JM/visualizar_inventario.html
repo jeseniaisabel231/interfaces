@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/visualizar_inventario.css">
+    <script src="https://kit.fontawesome.com/6db7c29e14.js" crossorigin="anonymous"></script>
+    <title>Inventario</title>
+</head>
+<body>
+    <div id="volver">
+        <button class="button_skyblue" ><i class="fa-solid fa-arrow-left"></i> Volver a módulos</button>
+    </div>
+    <h1>Inventario</h1>
+    
+    <div class="table_container">
+        <div class="filtro_container">
+            <form id="lupa">
+                <input type="text">
+                <button id="lupa_icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <div id="filtro">
+                <h5>Filtro</h5>
+                <button class="button_skyblue">Todos <i class="fa-solid fa-caret-down"></i></button>
+            </div>
+        </div>
+        <table>
+            <tr>
+                <th>id_producto</th>
+                <th>nombre</th>
+                <th>descripción</th>
+                <th>stock</th>
+                <th>precio</th>
+                <th>marca</th>
+                <th>modelo</th>
+                <th>categoría</th>
+                <th>promoción</th>
+                <th>imagen</th>
+                <th>Editar</th>
+                <th>Eliminar</th>
+            </tr>
+            <tr>
+                <td>AMD_202101232</td>
+                <td>Procesador AMD Ryzen 5 2600</td>
+                <td>Procesador con 4 nucleos y 8 hilos de Procesador</td>
+                <td>100</td>
+                <td>500</td>
+                <td>AMD</td>
+                <td>Procesador AMD Ryzen 5 2600</td>
+                <td>Procesador</td>
+                <td>-</td>
+                <td>-</td>
+                <td><button class="button_skyblue">Editar</button></td>
+                <td><button class ="button_red">Borrar</button></td>
+            </tr>
+        </table>
+    </div>
+    
+
+
+    
+</body>
+</html>

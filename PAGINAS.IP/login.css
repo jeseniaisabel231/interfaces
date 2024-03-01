@@ -49,21 +49,20 @@ h1{
     margin-bottom: 23px;
     font-size: 30px;
 }
-button{
+.ingresarButton{
     margin-top: 50px;
-}
-.fonrm{
-    border-radius: 8px;
-    height: 40px;
-    border: 2px solid #dadada;
-}
-button{
     background-color: var(--main-superior);
     height:40px;
     color: white;
     border-radius: 8px;
     font-size: 15px;
-
+    text-align: center;
+    padding-top: 10px;
+}
+.fonrm{
+    border-radius: 8px;
+    height: 40px;
+    border: 2px solid #dadada;
 }
 p{
     margin-top: 17px;
@@ -74,3 +73,19 @@ label{
     font-size: 15px;
 }
 
+@media (max-width: 1120px){
+    .contenedor_principal{
+        flex-direction: column;
+    }
+    img{
+        width: 100%;
+    }
+    main {
+        justify-content: center;
+    }
+    form {
+        width: 100%;
+        margin-top: 30px;
+        padding-bottom: 30px;
+    }
+}

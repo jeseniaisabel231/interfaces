@@ -1,0 +1,95 @@
+#volver{
+  display: flex;
+  justify-content: flex-end
+}
+
+#filtro .button_skyblue{
+  background-color:#209FD5;
+  color: #ffffff;
+  width: 90px;
+  padding: 5px 2px;
+  border: none;
+  border-radius: 2ch;
+}
+.button_skyblue{
+  background-color: #ffffff;
+  border:solid 1px #209FD5;
+  color: #209FD5;
+  margin: 2% 5%;
+  padding: .6%;
+}
+.button_red{
+  border: solid 1px  red;
+  background-color: #ffffff;
+  color: red;
+}
+td .button_skyblue {
+  padding:5px 10px;
+  margin: 5px;
+  border-radius: 2ch;
+  width: 80px;
+} 
+td .button_red {
+  padding:5px 10px;
+  margin: 5px;
+  border-radius: 2ch;
+  width: 80px;
+} 
+
+h1{
+  font-size: 3em;
+  text-align: center;
+  margin: 15px 0;
+  width: 100%;
+}
+/* Lupa */
+#lupa {
+  display: flex;
+}
+#lupa_icon{
+  border: solid .5px;
+  border-radius:0 20ch 20ch 0;
+  padding: 2px 20px;
+  background: #ffffff;
+}
+input[type="text" i] {
+  border-radius: 2ch 0 0 2ch;
+  border: solid .5px;
+}
+
+.table_container{
+  width: 80%;
+  margin: auto;
+}
+.filtro_container{
+  display: flex;
+  padding: 6px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+#filtro{
+  display: flex;
+  align-items: center;
+}
+#filtro h5{
+  margin-right: 6px;
+}
+
+
+table, th, td {
+    border:1px solid #222460;
+    border-collapse: collapse;
+}
+th{
+  background-color: #222460;
+  color: #ffffff;
+  font-weight: 1;
+  text-align: center;
+  height: 20px;
+}
+td {
+  background-color: #ffffff;
+}
+th, td{
+  padding:5px;
+}
